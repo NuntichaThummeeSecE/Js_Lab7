@@ -40,19 +40,31 @@
 
         </label><input id="placeholder" type="text" placeholder="Type somthing here">
     </p>
-    <ul>
+    <ul id = list>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
     </ul>
     <section>
-        <button id="buttonBackground" onclick="changeBackground()">Change Background</button>
+        <button id="buttonBackground">Change Background</button>
+        <button id="addItem">Add Item</button>
     </section>
 
     <script>
         function changeBackground() {
-            document.body.style.backgroundColor = "pink";
+            document.body.style.backgroundColor = "#c0c0c0";
         }
+        document.getElementById("buttonBackground").addEventListener("click", changeBackground);
+
+        function addItem() {
+
+            let newItem = document.createElement("li");
+            newItem.textContent = "New Item";
+            document.getElementById("list").appendChild(newItem);
+
+        }
+        document.getElementById("addItem").addEventListener("click", addItem);
+
     </script>
 </body>
 
