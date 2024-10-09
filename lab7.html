@@ -18,11 +18,10 @@
             line-height: 1.5;
         }
 
-        li{
+        li {
             padding: 5px;
             background-color: #ddd;
         }
-
     </style>
     <title>
         Lab 7: HTML and CSS Basics
@@ -46,6 +45,12 @@
         <li>CSS</li>
         <li>JavaScript</li>
     </ul>
+    <button type="button" onclick=changeBackground()>Change Background</button>
+    <script>
+        function changeBackground() {
+            document.body.style.backgroundColor = "green";
+        }
+    </script>
 </body>
 
 </html>
