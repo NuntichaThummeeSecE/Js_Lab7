@@ -12,16 +12,24 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
         }
 
-        label,ul {
+        label {
             font-family: Arial, Helvetica, sans-serif;
+
         }
 
-        
-
         ul {
+            font-family: Arial, Helvetica, sans-serif;
             font-size: smaller;
         }
 
+        input::placeholder {
+            color: rgb(255, 119, 142);
+            opacity: 0.5;
+        }
+
+        #placeholder {
+            width: 50%
+        }
     </style>
     <title>
         Lab 7: HTML and CSS Basics
@@ -33,7 +41,7 @@
         <h1>Welcome to HTML and CSS Basics</h1>
     </header>
     <p>
-        <label>Type something</label><input class="placeholder" type="text" placeholder="">
+        <label>Type here : </label><input id="placeholder" type="text" placeholder="Type somthing here">
     </p>
     <ul>
         <li>HTML</li>
